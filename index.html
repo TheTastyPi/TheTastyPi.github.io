@@ -2,39 +2,32 @@
 <html>
   <head>
     <title>TheTastyPi</title>
+    <link href="stylesheet.css" rel="stylesheet"></link>
+    <link href="pics/tasty_pi.png" rel="icon"></link>
   </head>
   <body>
-    <h1>hello there</h1>
-    <br />
-    My name is TheTastyPi, and this is my homepage<br />
-    <br />
-    <h2>Projects (ordered by priority)</h2>
-    <ul>
-      <li>
-        [IN-DEV] just a platformer 2
-        <a href="https://thetastypi.github.io/just-a-platformer-2/editor/index.html">Editor Beta</a> (Another simple platformer with a level
-        editor, now with more features)
-      </li>
-      <li>
-        [COMPLETE] just a platformer
-        <a href="https://thetastypi.github.io/just-a-platformer/">Link</a> (A
-        simple platformer with a level editor)
-      </li>
-      <li>
-        [LOW PRIORITY] The Bulletin Board
-        <a href="https://thetastypi.github.io/The-Bulletin-Board/">Link</a> (An
-        incremental game with randomized elements, and post-it notes)
-      </li>
-      <li>
-        [DEAD] Progress Bar: The Game
-        <a href="https://thetastypi.github.io/Progress-Bar-The-Game/">Link</a>
-        (An incremental game revolving around progress bars)
-      </li>
-      <li>
-        [VERY DEAD] Exponential Madness
-        <a href="https://thetastypi.github.io/Exponential-Madness/">Link</a> (An
-        incremental game all about exponential growth)
-      </li>
-    </ul>
+    <h3 class="fadeDown">Hello there.</h1>
+    <div class="fadeDown" style="animation-delay:1s">I'm TheTastyPi, and this is my homepage.</div>
+    <div class="fadeDown nav" style="animation-delay:2s">
+      <button class="tabBtn" id="aboutBtn" onclick="switchTab('about')">About Me</button>
+      <button class="tabBtn" id="projectBtn" onclick="switchTab('project')">Projects</button>
+    </div>
+    <br>
+    <div class="tab" id="aboutTab">
+      I am an amateur programmer who enjoys playing and making webgames.
+      <br><br>
+      I used to be very immersed in making incremental game (those like 'Cookie Clicker' or 'Antimatter Dimensions'), but have since drifted away from that in favor of making platformer games.
+      <br><br>
+      Email: verytastypizza1@gmail.com<br>
+      <a href="https://www.youtube.com/channel/UCzgLblHWLt5X1qYNkdQyxbQ">YouTube Channel</a><br>
+      <a href="https://discord.gg/zVpdcuaXYF">Discord Server</a>
+    </div>
+    <div class="tab" id="projectTab">
+      These are the things I've worked on or is working on.
+      <br><br>
+      <div id="iconCont"></div>
+    </div>
+    <script src="tabs.js"></script>
+    <script src="projectIcon.js"></script>
   </body>
 </html>
